@@ -1,7 +1,7 @@
 {
   "name": "typescript-eslint-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is file which was implemented a base for eslint,prettier,nodemon.json and husky  ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
