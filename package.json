@@ -12,12 +12,12 @@
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/index.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint"
-    }
-  },
-  "keywords": [],
+  "keywords": [
+    "TypeScript",
+    "eslint",
+    "prettier",
+    "husky"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
