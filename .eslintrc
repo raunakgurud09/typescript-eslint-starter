@@ -9,6 +9,6 @@
     "prettier"
   ],
   "rules": {
-    "no-console": "off"
+    "no-console":"error"
   }
 }
