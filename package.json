@@ -4,13 +4,14 @@
   "description": "This is file which was implemented a base for eslint,prettier,nodemon.json and husky  ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start:dev": "nodemon",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "npx prettier --config .prettierrc \"src/**/*.ts\" --write",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js"
+    "start": "npm run build && node build/index.js",
+    "prepare": "husky install"
   },
   "keywords": [
     "TypeScript",
@@ -18,8 +19,8 @@
     "prettier",
     "husky"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Raunak Gurud",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.7.23",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
@@ -27,7 +28,7 @@
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "nodemon": "^2.0.20",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
